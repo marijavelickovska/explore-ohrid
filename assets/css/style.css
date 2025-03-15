@@ -15,6 +15,30 @@
 /* Global styles */
 
 
+/*Navbar*/
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 130px;
+    height: 50px;
+}
+
+#navbar .nav-item {
+    padding-right: 1.5rem;
+}
+
+#navbar .btn {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+#navbar .btn:hover {
+    color: orange;
+}
+
+
 /* grid visualisation CSS for testing */
 .container,
 .row {
