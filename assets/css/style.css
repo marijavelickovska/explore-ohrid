@@ -1,51 +1,74 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* CSS Variables */
 :root {
-    --primary-font: "Roboto", sans-serif;
-    --secondary-font: "Merriweather", sans-serif;
-    --primary-color: #1f5466; /* dark blue */
-    --secondary-color: #ffffff; /*white*/
-    --tertiary-color: #6e5a49; /*brown*/
-    --highlight-color: #4a8394; /* blue */
-    --highlight-color-light: #d3bc9d; /* beige */
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Merriweather", sans-serif;
+  --primary-color: #1f5466; /* dark blue */
+  --secondary-color: #ffffff; /*white*/
+  --tertiary-color: #6e5a49; /*brown*/
+  --highlight-color: #4a8394; /* blue */
+  --highlight-color-light: #d3bc9d; /* beige */
 }
 
 /* Global styles */
+body {
+  font-family: var(--primary-font);
+}
 
+section {
+    margin-top: 3rem;
+}
+
+h1 {
+  color: #1f5466;
+  font-size: 3rem;
+}
+
+.btn-brown {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.btn-brown:hover {
+  background-color: var(--tertiary-color);
+  color: orange;
+}
 
 /*Navbar*/
 #navbar {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 #navbar .logo {
-    width: 130px;
-    height: 50px;
+  width: 130px;
+  height: 50px;
 }
 
 #navbar .nav-item {
-    padding-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-#navbar .btn {
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+/*Header*/
+#header .hero-image {
+  height: 550px;
+  width: 100%;
+  background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
-#navbar .btn:hover {
-    color: orange;
-}
+/*About us
+#about-us {
+    background-color: var(--highlight-color-light);
+}*/
 
-
-/* grid visualisation CSS for testing */
+/* grid visualisation CSS for testing 
 .container,
 .row {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 .col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
+  border: 2px solid white;
+  background-color: lightgray;
+}*/
