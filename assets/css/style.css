@@ -9,7 +9,7 @@
   --secondary-color: #ffffff; /*white*/
   --tertiary-color: #6e5a49; /*brown*/
   --highlight-color: #4a8394; /* blue */
-  --highlight-color-light: #d3bc9d; /* beige */
+  --highlight-color-light: #aabcbe; 
 }
 
 /* Global styles */
@@ -57,10 +57,14 @@ h1 {
   background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
-/*About us
-#about-us {
-    background-color: var(--highlight-color-light);
-}*/
+
+/*Testimonials*/
+.testimonial {
+  border: 2px solid var(--highlight-color);
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
 
 /* grid visualisation CSS for testing 
 .container,
