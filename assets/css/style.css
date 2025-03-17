@@ -60,26 +60,30 @@ h1 {
 
 /*Testimonials*/
 .testimonial {
-  height: 60vh;
+  max-height: 500px;
   border: 2px solid orange;
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
   background-color: var(--primary-color);
   color: #fff;
-
-  /*background-color: #dee2ee;*/
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial img {
   border-radius: 50%;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
 }
 
 .checked {
   color: orange;
+}
+
+.testimonial .user-stars {
+  margin-top: auto; /*Make user stars be fixed at the bottom*/
 }
 
 
