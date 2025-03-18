@@ -10,20 +10,26 @@
   --tertiary-color: #6e5a49; /*brown*/
   --darkgrey-color: 100, 102, 103, 1; /*darkgray*/
   --highlight-color: #4a8394; /* blue */
-  --highlight-color-light: #aabcbe; 
+  --highlight-color-light: #aabcbe;
 }
 
 /* Global styles */
 body {
   font-family: var(--primary-font);
+  padding-top: 57.6px; /* pushes the top of the header down under fixed navbar */
 }
 
 section {
-    margin-top: 3rem;
+  padding-top: 4rem; /* prevent navbar overlap */
+}
+
+h1,
+h2{
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
 }
 
 h1 {
-  color: #1f5466;
   font-size: 3rem;
 }
 
@@ -58,7 +64,6 @@ h1 {
   background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
-
 /*Testimonials*/
 .testimonial {
   max-height: 500px;
@@ -78,16 +83,16 @@ h1 {
   object-fit: contain;
 }
 
+.testimonial .user-stars {
+  margin-top: auto; /*Make user stars be fixed at the bottom*/
+}
+
 .user-stars span {
   color: darkgrey;
 }
 
-.checked {
+.user-stars .checked {
   color: orange !important;
-}
-
-.testimonial .user-stars {
-  margin-top: auto; /*Make user stars be fixed at the bottom*/
 }
 
 /*Footer*/
@@ -101,7 +106,6 @@ footer {
   margin-right: 5px;
 }
 
-
 #contact .social-links i {
   font-size: 2rem;
   background-color: var(--primary-color);
@@ -113,7 +117,6 @@ footer {
   color: var(--secondary-color);
 }
 
-
 /* Media queries */
 
 /* Extra small devices*/
@@ -123,8 +126,6 @@ footer {
     font-size: 1.25rem;
   }
 }
-
-
 
 /* grid visualisation CSS for testing 
 .container,
