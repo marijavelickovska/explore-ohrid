@@ -6,8 +6,9 @@
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Merriweather", sans-serif;
   --primary-color: #1f5466; /* dark blue */
-  --secondary-color: #ffffff; /*white*/
+  --secondary-color: #fff; /*white*/
   --tertiary-color: #6e5a49; /*brown*/
+  --darkgrey-color: 100, 102, 103, 1; /*darkgray*/
   --highlight-color: #4a8394; /* blue */
   --highlight-color-light: #aabcbe; 
 }
@@ -61,12 +62,11 @@ h1 {
 /*Testimonials*/
 .testimonial {
   max-height: 500px;
-  border: 2px solid orange;
+  border: 2px solid var(--primary-color);
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
-  background-color: var(--primary-color);
-  color: #fff;
+  color: var(--darkgrey-color);
   display: flex;
   flex-direction: column;
 }
@@ -78,12 +78,39 @@ h1 {
   object-fit: contain;
 }
 
+.user-stars span {
+  color: darkgrey;
+}
+
 .checked {
-  color: orange;
+  color: orange !important;
 }
 
 .testimonial .user-stars {
   margin-top: auto; /*Make user stars be fixed at the bottom*/
+}
+
+/*Footer*/
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.opening-hours span {
+  margin-right: 5px;
+}
+
+
+#contact .social-links i {
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  color: orange;
+  margin-right: 3rem;
+}
+
+#contact .social-links i:hover {
+  color: var(--secondary-color);
 }
 
 
