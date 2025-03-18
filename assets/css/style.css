@@ -127,7 +127,7 @@ footer h2 {
 
 /*Tours section*/
 #tours .card-height {
-  min-height: 280px;
+  min-height: 210px;
 }
 
 #tours .card {
@@ -138,9 +138,9 @@ footer h2 {
   background-color: var(--highlight-color-light);
 }
 
+
 /* Media queries */
 
-/* Extra small devices*/
 @media screen and (max-width: 576px) {
   /* decrease font size on social links icons when screen size is too small*/
   #contact .social-links i {
@@ -148,13 +148,31 @@ footer h2 {
   }
 }
 
-/* grid visualisation CSS for testing 
-.container,
-.row {
-  border: 2px solid black;
+@media screen and (min-width: 768px) {
+  /* Make all tours cards the same height */
+  #tours .card-height {
+    min-height: 235px;
+  }
 }
 
-.col-12 {
-  border: 2px solid white;
-  background-color: lightgray;
-}*/
+@media screen and (min-width: 992px) {
+  /* Make all tours cards the same height */
+  #tours .card-height {
+    min-height: 220px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Make all tours cards the same height */
+  #tours .card-height {
+    min-height: 310px;
+  }
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+  /* make all service cards the same height for consistency */
+  #tours .card-height {
+    min-height: 280px;
+  }
+}
