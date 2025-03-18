@@ -24,14 +24,18 @@ section {
 }
 
 h1,
-h2{
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
+h2 {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
 }
 
-h1 {
+ h1 {
   font-size: 3rem;
-}
+ }
+
+ h2 {
+  font-size: 2.5rem;
+ }
 
 .btn-brown {
   background-color: var(--tertiary-color);
@@ -102,6 +106,10 @@ footer {
   margin-top: 1.5rem;
 }
 
+footer h2 {
+  color: var(--secondary-color);
+}
+
 .opening-hours span {
   margin-right: 5px;
 }
@@ -110,22 +118,25 @@ footer {
   font-size: 2rem;
   background-color: var(--primary-color);
   color: orange;
-  margin-right: 3rem;
+  margin: 0 1.5rem;
 }
 
 #contact .social-links i:hover {
   color: var(--secondary-color);
 }
 
-/*Must-see section*/
-#must-see .card-height {
+/*Tours section*/
+#tours .card-height {
   min-height: 280px;
 }
 
-#must-see .list-group-item:hover {
-  background-color: var(--highlight-color-light);
+#tours .card {
+  margin-bottom: 2rem;
 }
 
+#tours .list-group-item:hover {
+  background-color: var(--highlight-color-light);
+}
 
 /* Media queries */
 
