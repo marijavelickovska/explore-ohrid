@@ -114,6 +114,17 @@ footer {
 }
 
 
+/* Media queries */
+
+/* Extra small devices*/
+@media screen and (max-width: 576px) {
+  /* decrease font size on social links icons when screen size is too small*/
+  #contact .social-links i {
+    font-size: 1.25rem;
+  }
+}
+
+
 
 /* grid visualisation CSS for testing 
 .container,
