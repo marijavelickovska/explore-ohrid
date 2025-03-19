@@ -153,6 +153,16 @@ footer h2 {
   color: var(--primary-color);
 }
 
+/* Form */
+form p {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+form label:hover {
+  color: orange;
+}
+
 
 /* Media queries */
 
