@@ -19,14 +19,11 @@ body {
   padding-top: 57.6px; /* pushes the top of the header down under fixed navbar */
 }
 
-#contact {
-  padding-top: 4rem; /* prevent navbar overlap */
-}
-
 h1,
 h2 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
+  margin: 2rem 0;
 }
 
 h1 {
@@ -47,7 +44,17 @@ h2 {
   color: orange;
 }
 
-/*Navbar*/
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
 #navbar {
   background-color: var(--primary-color);
 }
@@ -61,14 +68,14 @@ h2 {
   padding-right: 1.5rem;
 }
 
-/*Header*/
+/* Header */
 #header .hero-image {
   height: 550px;
   width: 100%;
   background: url("../images/hero-image.jpg") no-repeat center center/cover;
 }
 
-/*Testimonials*/
+/* Testimonials */
 .testimonial {
   max-height: 500px;
   border: 2px solid var(--primary-color);
@@ -99,7 +106,7 @@ h2 {
   color: orange !important;
 }
 
-/*Footer*/
+/* Footer */
 footer {
   background-color: var(--primary-color);
   color: #fff;
@@ -125,18 +132,27 @@ footer h2 {
   color: var(--secondary-color);
 }
 
-/*Tours section*/
+/* Tours section */
 #tours .card-height {
   min-height: 210px;
 }
-
-#tours .card {
+.card {
   margin-bottom: 2rem;
 }
 
 #tours .list-group-item:hover {
   background-color: var(--highlight-color-light);
 }
+
+/* Accommodations */
+.blue-text {
+  color: var(--primary-color);
+}
+
+#accommodations .card-title {
+  color: var(--primary-color);
+}
+
 
 /* Media queries */
 
