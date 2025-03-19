@@ -19,7 +19,7 @@ body {
   padding-top: 57.6px; /* pushes the top of the header down under fixed navbar */
 }
 
-section {
+#contact {
   padding-top: 4rem; /* prevent navbar overlap */
 }
 
@@ -29,13 +29,13 @@ h2 {
   color: var(--primary-color);
 }
 
- h1 {
+h1 {
   font-size: 3rem;
- }
+}
 
- h2 {
+h2 {
   font-size: 2.5rem;
- }
+}
 
 .btn-brown {
   background-color: var(--tertiary-color);
@@ -138,13 +138,27 @@ footer h2 {
   background-color: var(--highlight-color-light);
 }
 
-
 /* Media queries */
 
 @media screen and (max-width: 576px) {
   /* decrease font size on social links icons when screen size is too small*/
   #contact .social-links i {
     font-size: 1.25rem;
+  }
+
+  #contact .contact-info,
+  #contact .opening-hours {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #contact address {
+    text-align: right;
+  }
+
+  #contact .opening-hours {
+    text-align: center;
   }
 }
 
@@ -167,12 +181,19 @@ footer h2 {
   #tours .card-height {
     min-height: 310px;
   }
+
+  #contact .opening-hours {
+    text-align: start;
+  }
 }
 
-/* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-  /* make all service cards the same height for consistency */
+  /* Make all tours cards the same height */
   #tours .card-height {
     min-height: 280px;
+  }
+
+  #contact .opening-hours .summer-season {
+    text-align: end;
   }
 }
