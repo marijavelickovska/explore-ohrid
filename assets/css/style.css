@@ -7,10 +7,9 @@
   --secondary-font: "Merriweather", sans-serif;
   --primary-color: #1f5466; /* dark blue */
   --secondary-color: #fff; /*white*/
-  --tertiary-color: #6e5a49; /*brown*/
-  --darkgrey-color: 100, 102, 103, 1; /*darkgray*/
-  --highlight-color: #4a8394; /* blue */
-  --highlight-color-light: #aabcbe;
+  --brown-color: #6e5a49; /*brown*/
+  --orange-color: #ffa500; /*orange*/
+  --darkgrey-color: #a9a9a9; /*darkgrey*/
 }
 
 /* Global styles */
@@ -35,23 +34,21 @@ h2 {
 }
 
 .btn-brown {
-  background-color: var(--tertiary-color);
+  background-color: var(--brown-color);
   color: var(--secondary-color);
 }
 
 .btn-brown:hover {
-  background-color: var(--tertiary-color);
-  color: orange;
-}
-
-.btn-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--brown-color);
+  color: var(--orange-color);
 }
 
 .card {
   margin-bottom: 2rem;
+}
+
+.card-title {
+  color: var(--primary-color);
 }
 
 /* Navbar */
@@ -82,7 +79,6 @@ h2 {
   border-radius: 5px;
   padding: 16px;
   margin: 16px 0;
-  color: var(--darkgrey-color);
   display: flex;
   flex-direction: column;
 }
@@ -99,17 +95,17 @@ h2 {
 }
 
 .user-stars span {
-  color: darkgrey;
+  color: var(--darkgrey-color);
 }
 
 .user-stars .checked {
-  color: orange !important;
+  color: var(--orange-color) !important;
 }
 
 /* Footer */
 footer {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--secondary-color);
   margin-top: 1.5rem;
 }
 
@@ -124,7 +120,7 @@ footer h2 {
 #contact .social-links i {
   font-size: 2rem;
   background-color: var(--primary-color);
-  color: orange;
+  color: var(--orange-color);
   margin: 0 1.5rem;
 }
 
@@ -141,7 +137,7 @@ footer h2 {
 }
 
 #tours .list-group-item:hover {
-  background-color: var(--highlight-color-light);
+  background-color: var(--darkgrey-color);
 }
 
 /* Accommodations */
@@ -149,8 +145,15 @@ footer h2 {
   color: var(--primary-color);
 }
 
-#accommodations .card-title {
-  color: var(--primary-color);
+#accommodations .card-title,
+#restaurants .card-title {
+  text-align: center;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Form */
@@ -159,10 +162,9 @@ form p {
   font-size: 1.25rem;
 }
 
-form label:hover {
-  color: orange;
+.form-check-label:hover {
+  color: var(--orange-color);
 }
-
 
 /* Media queries */
 
@@ -200,6 +202,9 @@ form label:hover {
   #tours .card-height {
     min-height: 220px;
   }
+
+  #contact .contact-info {
+    text-align: start;
 }
 
 @media screen and (min-width: 1200px) {
