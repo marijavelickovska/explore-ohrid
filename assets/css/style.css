@@ -43,6 +43,10 @@ h2 {
   color: var(--orange-color);
 }
 
+.blue-text {
+  color: var(--primary-color);
+}
+
 .card {
   margin-bottom: 2rem;
 }
@@ -102,7 +106,7 @@ h2 {
   color: var(--orange-color) !important;
 }
 
-/* Footer */
+/* Footer - Contact */
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -141,10 +145,6 @@ footer h2 {
 }
 
 /* Accommodations */
-.blue-text {
-  color: var(--primary-color);
-}
-
 #accommodations .card-title,
 #restaurants .card-title {
   text-align: center;
@@ -172,6 +172,7 @@ form p {
   /* decrease font size on social links icons when screen size is too small*/
   #contact .social-links i {
     font-size: 1.25rem;
+    margin: 0 1rem;
   }
 
   #contact .contact-info,
