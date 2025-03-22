@@ -73,7 +73,7 @@ h2 {
 #header .hero-image {
   height: 550px;
   width: 100%;
-  background: url("../images/hero-image.jpg") no-repeat center center/cover;
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* Testimonials */
