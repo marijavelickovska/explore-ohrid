@@ -1,6 +1,5 @@
 # Testing
 
-> [!NOTE]
 > Return back to the [README.md](README.md) file.
 
 ## Code Validation
@@ -115,7 +114,7 @@ I've used [GitHub Issues](https://www.github.com/marijavelickovska/explore-ohrid
 
 All previously closed/fixed bugs can be tracked [here](https://www.github.com/marijavelickovska/explore-ohrid/issues?q=is%3Aissue+is%3Aclosed+label%3Abug).
 
-![screenshot](documentation/bugs/issues-closed.png)
+![screenshot](documentation/issues/issues-closed.png)
 
 ### Unfixed Bugs
 
@@ -123,10 +122,7 @@ All previously closed/fixed bugs can be tracked [here](https://www.github.com/ma
 
 Any remaining open issues can be tracked [here](https://www.github.com/marijavelickovska/explore-ohrid/issues).
 
-| Issue | Screenshot |
-| --- | --- |
-| One card appears smaller than the others on medium devices. On potential fix would be to use Bootstrap's Grid Card .h-100 class.   [bootstrap_link](https://getbootstrap.com/docs/5.3/components/card/#grid-cards). I don't think this is too important, so I left it for now as is. Aesthetics issue, not bug | ![screenshot](documentation/bugs/issue-open-1.png) |
-| Some inputs in the form do not display the invalid feedback error message (name, lastname, email, and phone). The other inputs display the error messages correctly. I have tested this with Chrome, Edge, and Firefox. The warnings are only a problem with Chromium-based browsers (Chrome, Edge), and works perfectly fine in Firefox. | ![screenshot](documentation/bugs/issue-open-2.png) | 
+![screenshot](documentation/issues/issues-open.png)
 
 
 
