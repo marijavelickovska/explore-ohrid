@@ -81,56 +81,22 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-⚠️ INSTRUCTIONS ⚠️
-
-Defensive programming (defensive design) is extremely important! When building projects that accept user inputs or forms, you should always test the level of security for each form field. Examples of this could include (but not limited to):
-
-All Projects:
-
-- Users cannot submit an empty form (add the `required` attribute)
-- Users must enter valid field types (ensure the correct input `type=""` is used)
-- Users cannot brute-force a URL to navigate to a restricted pages
-
-Python Projects:
-
-- Users cannot perform CRUD functionality if not authenticated (if login functionality exists)
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers/admins
-
-You'll want to test all functionality on your application, whether it's a standard form, or CRUD functionality, for data manipulation on a database. Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser). You should include any manual tests performed, and the expected results/outcome.
-
-Testing should be replicable (can someone else replicate the same outcome?). Ideally, tests cases should focus on each individual section of every page on the website. Each test case should be specific, objective, and step-wise replicable.
-
-Instead of adding a general overview saying that everything works fine, consider documenting tests on each element of the page (eg. button clicks, input box validation, navigation links, etc.) by testing them in their "happy flow", their "bad/exception flow", mentioning the expected and observed results, and drawing a parallel between them where applicable.
-
-Consider using the following format for manual test cases:
-
-- Expected Outcome / Test Performed / Result Received / Fixes Implemented
-
-- **Expected**: "Feature is expected to do X when the user does Y."
-- **Testing**: "Tested the feature by doing Y."
-- (either) **Result**: "The feature behaved as expected, and it did Y."
-- (or) **Result**: "The feature did not respond to A, B, or C."
-- **Fix**: "I did Z to the code because something was missing."
-
-Use the table below as a basic start, and expand on it using the logic above.
-
-⚠️ --- END --- ⚠️
-
 Defensive programming was manually tested with the below user acceptance testing:
+
 
 | Page | Expectation | Test | Result | Screenshot |
 | --- | --- |  --- |  --- |  --- |
-| Home | Feature is expected to display examples of why users should join. | Verified that the page displays the club’s mission and purpose in a clear and concise manner. | The mission and purpose were displayed as expected. | ![screenshot](documentation/defensive/home.png) |
-| | Feature is expected to have accessible navigation links. | Checked navigation links for correct functionality and accessibility. | Navigation links were functional and accessible. | ![screenshot](documentation/defensive/navigation.png) |
+ | Home | Feature is expected to display content and images to attract users to book a tour. | Verified that the page displays the agency's purpose in a clear and concise manner. | The purpose were displayed as expected. | ![screenshot](documentation/defensive/home.png)|
+| Navbar | Feature is expected to have accessible navigation links. | Checked navigation links for correct functionality and accessibility. | Navigation links were functional and accessible. | ![screenshot](documentation/defensive/navigation.png) |
 | | Feature is expected to be fully responsive. | Resized the browser window and tested on multiple devices (mobile, tablet, desktop). | The page was responsive across all tested screen sizes. | ![screenshot](documentation/defensive/responsive.png) |
-| Schedule/Timetable | Feature is expected to show the running schedule/timetable for sessions. | Confirmed that the page contains a structured table or list with session timings. | Timetable was displayed as expected. | ![screenshot](documentation/defensive/schedule.png) |
-| Events | Feature is expected to display details of different running events. | Verified that the page lists upcoming events with relevant details. | Event details were displayed as expected. | ![screenshot](documentation/defensive/events.png) |
-| Gallery | Feature is expected to showcase a gallery of past events. | Verified that the gallery contains clear images that aren't stretched, pixelated, and fully responsive. | Images are properly sized, and respond well to different device sizes. | ![screenshot](documentation/defensive/gallery.png) |
-| Sign-Up Form | Feature is expected to prevent submission of an empty form. | Attempted to submit the form without filling any fields. | Form submission was blocked, as expected. | ![screenshot](documentation/defensive/signup01.png) |
-| | Feature is expected to enforce valid input types for each field. | Entered invalid data (e.g., random text in an email field, numbers in a name field, etc.). | Error messages were displayed appropriately, and submission was blocked. | ![screenshot](documentation/defensive/signup02.png) |
-| Social Links | Feature is expected to include working links to the club’s social platforms (Instagram, Facebook, etc.). | Clicked each social link to verify redirection to the correct platform page. | All links redirected to the correct platform pages, opening in new browser tabs. | ![screenshot](documentation/defensive/socialmedia.png) |
+| Explore Ohrid | Feature is expected to show the user attractions that Ohrid has to offer. | Confirmed that the page contains a structured text explaining the attractions, as well as a carousel with images for visually displaying them. | Text and images was displayed as expected. | ![screenshot](documentation/defensive/explore-ohrid.png) |
+| Testimonials | Feature is expected to display testimonials from people who have visited the tours. | Verified that the page shows all testimonials. | Testimonials were displayed as expected. | ![screenshot](documentation/defensive/testimonials.png) |
+| Contact | Feature is expected to display all contact information for the agency, as well as its opening hours. | Verified that the contact contains all the necessary information, such as address, phone, email, and opening hours. | Contact information is displayed as expected, visible and easily accessible. | ![screenshot](documentation/defensive/contact.png) |
+| Social Links | Feature is expected to include working links to the explore Ohrid agency's social platforms (Instagram, Facebook, etc.). | Clicked each social link to verify redirection to the correct platform page. | All links redirected to the correct platform pages, opening in new browser tabs. | ![screenshot](documentation/defensive/socialmedia.png) |
+| Tours | Feature is expected to display all the tours offered by the agency with all the details for each of them. | Confirmed that all tours are displayed correctly as must-see and must-do tours. For each tour, an image and details about the date and price are shown. Also, a link leading to the 'book now' form is provided. | Tours are displayed as expected, the link redirect to the book now page.| ![screenshot](documentation/defensive/tours.png) |
+| Accomodations and restaurants | Feature is intended to offer recommendations for hotels and restaurants. | Confirmed that the page contains a separate section for accommodation offers and a separate section for restaurant offers, as well as links to see more for each recommendation. | Accomodations and restaurants are displayed as expected. The links opens in a new tab. | ![screenshot](documentation/defensive/accommodations.png) |
+| Book-now Form | Feature is expected to prevent submission of an empty form. | Attempted to submit the form without filling any fields. | Form submission was blocked, as expected. | ![screenshot](documentation/defensive/booknow.png) |
+| Confirmation | Feature is intended to confirm to the user that they have successfully submitted the form. | Confirmed that after filling out all the inputs in the form and successfully submitting the form, a confirmation appears informing the user that the form has been successfully submitted. | Confirmation is displayed as expected. | ![screenshot](documentation/defensive/confirmation.png) |
 | 404 Error Page | Feature is expected to display a 404 error page for non-existent pages. | Navigated to an invalid URL (e.g., `/test`) to test error handling. | A custom 404 error page was displayed as expected. | ![screenshot](documentation/defensive/404.png) |
 
 ## User Story Testing
