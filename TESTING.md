@@ -59,23 +59,14 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Lighthouse Audit
 
-⚠️ INSTRUCTIONS ⚠️
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports. Avoid testing the local version (Gitpod/VSCode/etc.), as this can have knock-on effects for performance. If you don't have "Lighthouse" in your Developer Tools, it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Unless your project is a single-page application (SPA), you should test Lighthouse Audit results for all of your pages, for both *mobile* and *desktop*.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-⚠️ --- END --- ⚠️
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. Some warnings are outside of my control, and mobile results tend to be lower than desktop.
 
 | Page | Mobile | Desktop |
 | --- | --- | --- |
 | Home | ![screenshot](documentation/lighthouse/mobile-home.png) | ![screenshot](documentation/lighthouse/desktop-home.png) |
-| Gallery | ![screenshot](documentation/lighthouse/mobile-gallery.png) | ![screenshot](documentation/lighthouse/desktop-gallery.png) |
-| Signup | ![screenshot](documentation/lighthouse/mobile-signup.png) | ![screenshot](documentation/lighthouse/desktop-signup.png) |
+| Tours | ![screenshot](documentation/lighthouse/mobile-tours.png) | ![screenshot](documentation/lighthouse/desktop-tours.png) |
+| Stay and taste | ![screenshot](documentation/lighthouse/mobile-stay-taste.png) | ![screenshot](documentation/lighthouse/desktop-stay-taste.png) |
+| Booking | ![screenshot](documentation/lighthouse/mobile-booking.png) | ![screenshot](documentation/lighthouse/desktop-booking.png) |
 | Confirmation | ![screenshot](documentation/lighthouse/mobile-confirmation.png) | ![screenshot](documentation/lighthouse/desktop-confirmation.png) |
 | 404 | ![screenshot](documentation/lighthouse/mobile-404.png) | ![screenshot](documentation/lighthouse/desktop-404.png) |
 
@@ -89,11 +80,11 @@ Defensive programming was manually tested with the below user acceptance testing
  | Home | Feature is expected to display content and images to attract users to book a tour. | Verified that the page displays the agency's purpose in a clear and concise manner. | The purpose were displayed as expected. | ![screenshot](documentation/defensive/home.png)|
 | Navbar | Feature is expected to have accessible navigation links. | Checked navigation links for correct functionality and accessibility. | Navigation links were functional and accessible. | ![screenshot](documentation/defensive/navigation.png) |
 | | Feature is expected to be fully responsive. | Resized the browser window and tested on multiple devices (mobile, tablet, desktop). | The page was responsive across all tested screen sizes. | ![screenshot](documentation/defensive/responsive.png) |
-| Explore Ohrid | Feature is expected to show the user attractions that Ohrid has to offer. | Confirmed that the page contains a structured text explaining the attractions, as well as a carousel with images for visually displaying them. | Text and images was displayed as expected. | ![screenshot](documentation/defensive/explore-ohrid.png) |
+| Explore Ohrid | Feature is expected to show the user attractions that Ohrid has to offer. | Confirmed that the page contains a structured text explaining the attractions, as well as a carousel with images for visually displaying them. | Text and images was displayed as expected and the button "See Our Tours" redirect the user to the tours page. | ![screenshot](documentation/defensive/explore-ohrid.png) |
 | Testimonials | Feature is expected to display testimonials from people who have visited the tours. | Verified that the page shows all testimonials. | Testimonials were displayed as expected. | ![screenshot](documentation/defensive/testimonials.png) |
 | Contact | Feature is expected to display all contact information for the agency, as well as its opening hours. | Verified that the contact contains all the necessary information, such as address, phone, email, and opening hours. | Contact information is displayed as expected, visible and easily accessible. | ![screenshot](documentation/defensive/contact.png) |
 | Social Links | Feature is expected to include working links to the explore Ohrid agency's social platforms (Instagram, Facebook, etc.). | Clicked each social link to verify redirection to the correct platform page. | All links redirected to the correct platform pages, opening in new browser tabs. | ![screenshot](documentation/defensive/socialmedia.png) |
-| Tours | Feature is expected to display all the tours offered by the agency with all the details for each of them. | Confirmed that all tours are displayed correctly as must-see and must-do tours. For each tour, an image and details about the date and price are shown. Also, a link leading to the 'book now' form is provided. | Tours are displayed as expected, the link redirect to the book now page.| ![screenshot](documentation/defensive/tours.png) |
+| Tours | Feature is expected to display all the tours offered by the agency with all the details for each of them. | Confirmed that all tours are displayed correctly as must-see and must-do tours. For each tour, an image and details about the date and price are shown. Also, a link leading to the 'book now' form is provided. | Tours are displayed as expected, the link redirect to the booking page.| ![screenshot](documentation/defensive/tours.png) |
 | Accomodations and restaurants | Feature is intended to offer recommendations for hotels and restaurants. | Confirmed that the page contains a separate section for accommodation offers and a separate section for restaurant offers, as well as links to see more for each recommendation. | Accomodations and restaurants are displayed as expected. The links opens in a new tab. | ![screenshot](documentation/defensive/accommodations.png) |
 | Book-now Form | Feature is expected to prevent submission of an empty form. | Attempted to submit the form without filling any fields. | Form submission was blocked, as expected. | ![screenshot](documentation/defensive/booknow.png) |
 | Confirmation | Feature is intended to confirm to the user that they have successfully submitted the form. | Confirmed that after filling out all the inputs in the form and successfully submitting the form, a confirmation appears informing the user that the form has been successfully submitted. | Confirmation is displayed as expected. | ![screenshot](documentation/defensive/confirmation.png) |
@@ -116,20 +107,6 @@ Defensive programming was manually tested with the below user acceptance testing
 
 ## Bugs
 
-⚠️ INSTRUCTIONS ⚠️
-
-Nobody likes bugs,... except the assessors! Projects seem more suspicious if a student doesn't properly track their bugs. If you're about to submit your project without any bugs listed below, you should ask yourself why you're doing this course in the first place, if you're able to build this entire application without running into any bugs. The best thing you can do for any project is to document your bugs! Not only does it show the true stages of development, but think of it as breadcrumbs for yourself in the future, should you encounter the same/similar bug again, it acts as a gentle reminder on what you did to fix the bug.
-
-If/when you encounter bugs during the development stages of your project, you should document them here, ideally with a screenshot explaining what the issue was, and what you did to fix the bug.
-
-Alternatively, an improved way to manage bugs is to use the built-in **[Issues](https://www.github.com/marijavelickovska/explore-ohrid/issues)** tracker on your GitHub repository. This can be found at the top of your repository, the tab called "Issues".
-
-If using the Issues tracker for bug management, you can simplify the documentation process for testing. Issues allow you to directly paste screenshots into the issue page without having to first save the screenshot locally. You can add labels to your issues (e.g. `bug`), assign yourself as the owner, and add comments/updates as you progress with fixing the issue(s). Once you've solved the issue/bug, you should then "Close" it.
-
-When showcasing your bug tracking for assessment, you can use the following examples below.
-
-⚠️ --- END --- ⚠️
-
 ### Fixed Bugs
 
 [![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3Amarijavelickovska%2Fexplore-ohrid%20label%3Abug&label=bugs)](https://www.github.com/marijavelickovska/explore-ohrid/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
@@ -138,31 +115,26 @@ I've used [GitHub Issues](https://www.github.com/marijavelickovska/explore-ohrid
 
 All previously closed/fixed bugs can be tracked [here](https://www.github.com/marijavelickovska/explore-ohrid/issues?q=is%3Aissue+is%3Aclosed+label%3Abug).
 
-![screenshot](documentation/bugs/gh-issues-closed.png)
+![screenshot](documentation/bugs/issues-closed.png)
 
 ### Unfixed Bugs
-
-⚠️ INSTRUCTIONS ⚠️
-
-You will need to mention any unfixed bugs and why they are not fixed upon submission of your project. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. Where possible, you must fix all outstanding bugs, unless outside of your control.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here! It's better to be honest and list them, because if it's not documented and an assessor finds the issue, they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-⚠️ --- END --- ⚠️
 
 [![GitHub issues](https://img.shields.io/github/issues/marijavelickovska/explore-ohrid)](https://www.github.com/marijavelickovska/explore-ohrid/issues)
 
 Any remaining open issues can be tracked [here](https://www.github.com/marijavelickovska/explore-ohrid/issues).
 
-![screenshot](documentation/bugs/gh-issues-open.png)
+| Issue | Screenshot |
+| --- | --- |
+| One card appears smaller than the others on medium devices. On potential fix would be to use Bootstrap's Grid Card .h-100 class.   [bootstrap_link](https://getbootstrap.com/docs/5.3/components/card/#grid-cards). I don't think this is too important, so I left it for now as is. Aesthetics issue, not bug | ![screenshot](documentation/bugs/issue-open-1.png) |
+| Some inputs in the form do not display the invalid feedback error message (name, lastname, email, and phone). The other inputs display the error messages correctly. I have tested this with Chrome, Edge, and Firefox. The warnings are only a problem with Chromium-based browsers (Chrome, Edge), and works perfectly fine in Firefox. | ![screenshot](documentation/bugs/issue-open-2.png) | 
+
+
 
 ### Known Issues
 
-| Issue | Screenshot |
-| --- | --- |
-| On devices smaller than 375px, the page starts to have horizontal `overflow-x` scrolling. | ![screenshot](documentation/issues/overflow.png) |
-| When validating HTML with a semantic `<section>` element, the validator warns about lacking a header `h2-h6`. This is acceptable. | ![screenshot](documentation/issues/section-header.png) |
-
-> [!IMPORTANT]
 > There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
+
+### Other Findings
+
+> I know that some of my commits are quite long, but I’m aware of that and believe that throughout this entire process, I've learned a lot - including how to improve my commits.
 
