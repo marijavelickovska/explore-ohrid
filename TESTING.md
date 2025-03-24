@@ -101,7 +101,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a user  | I want to see recommendations for  restaurants                      | as I feel more relaxed when I can organize my entire trip in one place.               | ![screenshot](documentation/features/restaurants-bars.png) |
 | As a user  | I want to have the option to book tours through the website | so that I can secure my spot in advance.                                | ![screenshot](documentation/features/booknow.png) |
 | As a user  | I want to see a confirmation message after submitting the form | so I can be sure that the tour has been reserved.   | ![screenshot](documentation/features/confirmation.png) |
-| As a user  | I would like the website to be fully responsive                        | so that I can easily navigate and access information from my phone, tablet, or desktop. | ![screenshot](documentation/responsiveness/booking-tablet.png) |
+| As a user  | I would like the website to be fully responsive                        | so that I can easily navigate and access information from my phone, tablet, or desktop. | ![screenshot](documentation/mockup.png) |
 | As a user  | I would like to see a 404 error page if I get lost                              | so that it's obvious that I've stumbled upon a page that doesn't exist.                 | ![screenshot](documentation/features/404.png) |
 
 ## Bugs
@@ -128,7 +128,11 @@ Any remaining open issues can be tracked [here](https://www.github.com/marijavel
 
 ### Known Issues
 
-> There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
+| Issue | 
+| --- |
+| The form works correctly with all fields except the checkbox. I am aware that it can be submitted without checking any box, but solution would be to use JavaScript, so I left it for now as it is. | 
+
+> There are no others remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
 
 ### Other Findings
 
